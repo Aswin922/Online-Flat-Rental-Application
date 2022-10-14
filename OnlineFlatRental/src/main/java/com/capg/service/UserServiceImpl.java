@@ -21,10 +21,10 @@ public class UserServiceImpl implements UserService{
 	private UserRepository userRepository;
 	
 	@Override
-	public UserDTO viewUser(int userId) throws RentalException {
+	public User viewUser(int userId) throws RentalException {
 		Optional<User> optional = userRepository.findById(userId);
 		User user = optional.orElseThrow(() -> new RentalException("Service.CUSTOMER_NOT_FOUND"));
-		UserDTO user1 = new UserDTO();
+		User user1 = new User();
 		user1.setUserId(user.getUserId());
 		user1.setUserName(user.getUserName());
 		user1.setPassword(user.getPassword());
@@ -48,33 +48,33 @@ public class UserServiceImpl implements UserService{
 		return usersList;
 	}
 	@Override
-	public UserDTO validateUser(String userName,String password) {
-		UserDTO userDTO = new UserDTO();
-		return userDTO;
-	}
-	@Override
-	public UserDTO addUser(UserDTO user) {
-		UserDTO userDTO = new UserDTO();
-		userDTO.setUserId(user.getUserId());
-		userDTO.setUserName(user.getUserName());
-		userDTO.setPassword(user.getPassword());
-		userDTO.setUserType(user.getUserType());
-		return userDTO;
-		
-	}
-	@Override
-	public UserDTO updateUser(UserDTO user) {
+	public User validateUser(String userName,String password) {
+		User user = new User();
 		return user;
 	}
 	@Override
-	public UserDTO updatePassword(UserDTO user,String newPassword) {
+	public User addUser(User user) {
+//		UserDTO userDTO = new UserDTO();
+//		userDTO.setUserId(user.getUserId());
+//		userDTO.setUserName(user.getUserName());
+//		userDTO.setPassword(user.getPassword());
+//		userDTO.setUserType(user.getUserType());
+		User user1=userRepository.save(user);
+		return user1;
+	}
+	@Override
+	public User updateUser(User user) {
 		return user;
 	}
 	@Override
-	public UserDTO removeUser(UserDTO userDTO) throws RentalException {
-		Optional<User> user = userRepository.findById(userDTO.getUserId());
-		user.orElseThrow(() -> new RentalException("Service.USER_NOT_FOUND"));
-		userRepository.deleteById(userDTO.getUserId());
-		return userDTO;
+	public User updatePassword(User user,String newPassword) {
+		return user;
+	}
+	@Override
+	public User removeUser(User user) throws RentalException {
+		Optional<User> user1 = userRepository.findById(user.getUserId());
+		user1.orElseThrow(() -> new RentalException("Service.USER_NOT_FOUND"));
+		userRepository.deleteById(user.getUserId());
+		return user;
 	}
 }
