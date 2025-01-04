@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-G3S1BackendApplication<onlineflatrental>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cg.onlineflatrental.G3S1BackendApplication",
+            "projectName": "onlineflatrental",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

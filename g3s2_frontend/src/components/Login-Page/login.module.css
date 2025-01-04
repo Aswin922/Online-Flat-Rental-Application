@@ -1,0 +1,290 @@
+.loginbox{
+    position:absolute;
+     width: auto;
+     height:auto;
+     top: calc(50% - 240px);
+     left: calc(40% - 160px);
+    border-radius:15px 15px 15px 15px;
+ }
+ .c1{
+    box-shadow:0 0 10px grey;
+    background-color:white;
+    width:300px;
+    height:500px;
+    display:inline-block;
+    border-radius:15px 15px 15px 15px;
+ }
+ 
+ .c11{
+    background-image:url('https://images.wallpaperscraft.com/image/single/metropolis_cityscape_skyline_138907_1080x1920.jpg');
+    background-size:300px 400px;
+    background-repeat: no-repeat;
+    background-color:white;
+    width:300px;
+    height:400px;
+    display:inline-block;
+    position:absolute;
+    z-index:4;
+    border-radius:15px 15px 200px 200px;
+ }
+ #left, #right {
+    color:white;
+    display: inline-block;
+    width:146px;
+    height: 500px;
+    background-color:white;
+    cursor:pointer;
+ }
+ #left{
+    border-radius:15px 0px 0px 15px;
+ }
+ #right{
+    border-radius:15px 15px 15px 0px;
+ }
+ .left_hover{
+    color:#EE9BA3;
+    box-shadow: 5px 0 18px -10px #333;
+    z-index:1;
+    position:absolute;
+ }
+ .right_hover{
+    box-shadow: -5px 0 15px -10px #333;
+    z-index:1;
+    position:absolute;
+ }
+ .s1class{
+    color:#748194;
+    position:absolute;
+    bottom:0;
+    left:63%;
+    margin-left: -50%;
+ }
+ .s1class span,  .s2class span{
+    display:block;
+ }
+ .su{
+    font-size:20px;
+ }
+ .s2class{
+    color:#748194;
+    position:absolute;
+    bottom:0;
+    right:63%;
+    margin-right: -50%;
+ }
+ .mainhead{
+    color:white;
+    font-size:50px;
+    text-align:center;
+    margin-top:50px;
+ }
+ .mainp{
+    color:white;
+    font-size:13px;
+    text-align:center;
+    margin-top:10px;
+ }
+ .c2{
+    background-color:white;
+    width:300px;
+    height:500px;
+    border-radius:15px;
+    position:absolute;
+    left:370px;
+    display:inline-block;
+ }
+ .username{
+    font-weight: bold;
+    width: 230px;
+    margin: 0 35px 30px ;
+    height: 50px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #F6F7F9;
+    color: #748194;
+    font-size: 14px;
+ }
+ .btnlogin{
+    font-weight: bold;
+    width: 200px;
+    margin: 0 50px 0px;
+    height: 45px;
+    padding: 6px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: #59b9f4;
+    font-size: 14px;
+ }
+ .btnlogin:hover {
+   box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+   transform: scale(1.05);
+ }
+ .signup1{
+    color:#748194;
+    font-size:30px;
+    margin-left: 80px;
+    margin-top: 20px;
+ }
+ a{
+    text-decoration: none;
+ }
+ .signup2{
+    color:#748194;
+    font-size:20px;
+    text-align:center;
+ }
+ .signup{
+    display:initial;
+ }
+ .signin{
+    display:initial;
+ }
+ .btnsign{
+   font-weight: bold;
+   width: 200px;
+   margin: 10px 50px 0px;
+   height: 45px;
+   padding: 6px 15px;
+   border-radius: 10px;
+   outline: none;
+   border: none;
+   background: #fdfdfd;
+   font-size: 14px;
+}
+.btnsign:before {
+   background-color: initial;
+   background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+   border-radius: 125px;
+   content: "";
+   height: 50%;
+   left: 4%;
+   opacity: .5;
+   position: absolute;
+   top: 0;
+   transition: all .3s;
+   width: 92%;
+ }
+ 
+ .btnsign:hover {
+   box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+   transform: scale(1.05);
+ }
+
+.btnreg{
+   font-weight: bold;
+   width: auto;
+   margin: 300px 0 0 280px;
+   height: auto;
+   padding: 6px 15px;
+   outline: none;
+   font-size: 18px;
+   background-color: #a2dcfb;
+   border: 0;
+   border-radius: 56px;
+   color: rgb(255, 52, 52);
+   cursor: pointer;
+   display: inline-block;
+   font-family: system-ui,system-ui,"Segoe UI","Helvetica Neue",sans-serif;
+   position: absolute;
+   right: 175px;
+   top: 145px;
+   text-align: center;
+   text-decoration: none;
+   transition: all .2s;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+}
+.btnreg:before {
+   background-color: initial;
+   background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+   border-radius: 125px;
+   content: "";
+   height: 50%;
+   left: 4%;
+   opacity: .5;
+   position: absolute;
+   top: 0;
+   transition: all .3s;
+   width: 92%;
+ }
+ 
+ .btnreg:hover {
+   box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+   transform: scale(1.05);
+ }
+
+ .btnregt{
+   font-weight: bold;
+   width: auto;
+   margin: 300px 0 0 280px;
+   height: auto;
+   padding: 6px 15px;
+   outline: none;
+   font-size: 18px;
+   background-color: #a2dcfb;
+   border: 0;
+   border-radius: 56px;
+   color: rgb(255, 52, 52);
+   cursor: pointer;
+   display: inline-block;
+   font-family: system-ui,system-ui,"Segoe UI","Helvetica Neue",sans-serif;
+   position: absolute;
+   right: 25px;
+   top: 145px;
+   text-align: center;
+   text-decoration: none;
+   transition: all .2s;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+}
+.btnregt:before {
+   background-color: initial;
+   background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+   border-radius: 125px;
+   content: "";
+   height: 50%;
+   left: 4%;
+   opacity: .5;
+   position: absolute;
+   top: 0;
+   transition: all .3s;
+   width: 92%;
+ }
+ 
+ .btnregt:hover {
+   box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+   transform: scale(1.05);
+ }
+
+.reg{
+   height: 685px;
+   background-image: url(https://images6.alphacoders.com/686/thumb-1920-686872.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h4{
+   color:#748194;
+   margin: 0;
+   font-size: 18px;
+   position: absolute;
+   bottom: -38px;
+   left: 110px;
+   width: 200px;
+}
+h5{
+   color:#748194;
+   margin: 0;
+   font-size: 18px;
+   position: absolute;
+   bottom: -73px;
+   left: 150px;
+   width: 200px;
+}
+p{
+   color:#ff0000;
+}
